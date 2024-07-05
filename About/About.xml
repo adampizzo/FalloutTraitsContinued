@@ -5,6 +5,7 @@
 	<author>Atlas</author>
 	<supportedVersions>
 		<li>1.5</li>
+		<li>1.4</li>
 	</supportedVersions>
 	<description>Adds 71 new perks to Rimworld based on the theme from fallout games. Updated to 1.5. I fixed the traits XML, but the rest of the work on the traits and patching XML goes to FuglyPump.</description>
 	<modDependencies>

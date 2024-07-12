@@ -7,12 +7,18 @@
 		<li>1.5</li>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>Adds 71 new perks to Rimworld based on the theme from fallout games. Updated to 1.5. I fixed the traits XML, but the rest of the work on the traits and patching XML goes to FuglyPump.</description>
-	<modDependencies>
-		<li>
-			<packageId>monkey5206.carrycapacityfixed</packageId>
-			<displayName>Carry Capacity Fixed (Continued)</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2880150945</steamWorkshopUrl>
-		</li>
-	</modDependencies>
+	<loadAfter>
+		<li>monkey5206.carrycapacityfixed</li>
+		<li>CETeam.CombatExtended</li>
+		<li>Dubwise.Rimatomics</li>
+		<li>syrchalis.traitvalue</li>
+	</loadAfter>
+	<description>Adds 71 new perks to Rimworld based on the theme from fallout games. Updated to 1.5. I fixed the traits XML, but the rest of the work on the traits and patching XML goes to FuglyPump.
+	
+Update:
+- No longer *Requires* Carrying Capacity Fixed (Continued), however it will not load the traits that require it.
+
+List of traits can be found on the mod page.
+
+	</description>
 </ModMetaData>

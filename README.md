@@ -1,14 +1,14 @@
 Adds 71 new perks to Rimworld based on the theme from fallout games.
 
 Works for versions 1.4 and 1.5.
-No longer requires Carry Capacity Fixed (Continued) to run, however, traits that current increase carrying capacity will not be added unless you are running Carry Capacity Fixed (Continued)
+No longer requires Carry Capacity Fixed (Continued) to run, however, traits that currently increase carrying capacity during caravaning will not have the added functionality unless you are running Carry Capacity Fixed (Continued).
 
-'*' Means it requires Carry Capacity Fixed (Continued) to be enabled
+'\*' Means it uses Carry Capacity Fixed (Continued) to add functionality for caravan carrying capacity, but is not "needed" to run.
 List of Traits:
 
-*Strong Back: +50 carry capacity
+\*Strong Back: +50 carry capacity
 
-*Very Strong Back: +75 carry capacity
+\*Very Strong Back: +75 carry capacity
 
 Charismatic: +2 social, +10% social impact/negotiation and +5% trade+drug prices
 
@@ -28,9 +28,9 @@ Artisan: +3 crafting/construction, +5 artistic, +25% smoothing speed, +10% labor
 
 Iron Stomach: -30% hunger rate, +10% pain threshold and immunity
 
-*Packin' Light: +0.15 move speed, -15 carry capacity
+\*Packin' Light: +0.15 move speed, -15 carry capacity
 
-*Pack Rat: +30 carry capacity
+\*Pack Rat: +30 carry capacity
 
 Agile: +2 melee, +0.2 move speed, +5% melee hit, +10% melee dodge, +20% hunting stealth, -20% trap spring
 
@@ -48,11 +48,11 @@ Dodgy: +0.1 move speed, +10% melee dodge, -20% trap spring
 
 Evasive: +0.2 move speed, +20% melee dodge, -40% trap spring
 
-*Traveler: +1 social, +0.1 move speed, +10 carry capacity, -10% hunger rate, +0.5 foraging
+\*Traveler: +1 social, +0.1 move speed, +10 carry capacity, -10% hunger rate, +0.5 foraging
 
-*Explorer: +2 social, +0.15 move speed, +25 carry capacity, -15% hunger rate, +0.75 foraging
+\*Explorer: +2 social, +0.15 move speed, +25 carry capacity, -15% hunger rate, +0.75 foraging
 
-*Adventurer: +3 social, +0.2 move speed, +50 carry capacity, -20% hunger rate, +1 foraging
+\*Adventurer: +3 social, +0.2 move speed, +50 carry capacity, -20% hunger rate, +1 foraging
 
 Bandolier: +2 shooting, +25 carry capacity. -10% aiming time
 
@@ -96,7 +96,7 @@ Gun Nut: +3 shooting, -10% aiming time, +5% shooting accuracy
 
 Scrounger: +20% mining/drilling/plant/animal gather+butchery speeds and +50% to eating speed
 
-*Sturdy Frame: -10% incoming damage, +10% pain threshold and +25 carry capacity
+\*Sturdy Frame: -10% incoming damage, +10% pain threshold and +25 carry capacity
 
 Survivalist: +2 plants, -10% incoming damage, +10% immunity/healing factor/plant yield and +0.5 foraging
 
@@ -110,7 +110,7 @@ Rooted: +2 melee, -0.2 move speed, -10% incoming damage, +10% pain threshold and
 
 Lead Belly: -30% hunger rate, -20% toxic sensitivity, +10% immunity
 
-*Bear Arms: +3 melee/mining, +25 carry capacity, +10% work/mining/drilling speed
+\*Bear Arms: +3 melee/mining, +25 carry capacity, +10% work/mining/drilling speed
 
 Serendipitous: +8 mood, 0.5 trap spring factor, +10% melee dodge/shooting accuracy
 
@@ -149,8 +149,9 @@ Perfectionist: +4 construction/artistic, +20% construct/repair success rate, -20
 Iron fist: +4 melee, -4 shooting, +3 melee dps, +10% melee hit, +20% arrest success
 
 Credits:
-* FuglyPump - Original Author
-* Pandalaria - German Language Contributor
-* Toca Dor - Russian Language Contributor
-* proxyer - Japanese Language Contributor
-* Killathon & Espio Idsavant - Modding Community Support
+
+-   FuglyPump - Original Author
+-   Pandalaria - German Language Contributor
+-   Toca Dor - Russian Language Contributor
+-   proxyer - Japanese Language Contributor
+-   Killathon & Espio Idsavant - Modding Community Support

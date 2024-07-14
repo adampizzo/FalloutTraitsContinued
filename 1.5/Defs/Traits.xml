@@ -2,7 +2,127 @@
 <Defs>
 
 	<!-- Common (9.0, 8.0, 7.0) -->
-		
+	<TraitDef>
+		<defName>FT_StrongBack</defName>
+		<commonality>0.9</commonality>
+		<degreeDatas>
+		<li>
+			<label>strong back</label>
+			<description>[PAWN_nameDef] has a strong back which allows [PAWN_objective] to carry more than most people.</description>
+			<degree>1</degree>
+			<statOffsets>
+				<CarryingCapacity>+50</CarryingCapacity>
+			</statOffsets>
+		</li>
+		<li>
+			<label>very strong back</label>
+			<description>[PAWN_nameDef] has a very strong back, [PAWN_pronoun] must be part mule or something because [PAWN_pronoun] can carry a lot more than most people.</description>
+			<degree>2</degree>
+			<statOffsets>
+				<CarryingCapacity>+75</CarryingCapacity>
+			</statOffsets>
+		</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Hauling</li>
+		</requiredWorkTypes>
+		<requiredWorkTags>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<conflictingTraits>
+			<li>Wimp</li>
+			<li>FT_FrailBack</li>
+		</conflictingTraits>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>FT_Packing</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+		<li>
+			<label>packin' light</label>
+			<description>[PAWN_nameDef] packs lightly. [PAWN_pronoun] will carry less but will move more swiftly.</description>
+			<degree>-1</degree>
+			<statOffsets>
+				<CarryingCapacity >-15</CarryingCapacity>
+				<MoveSpeed>+0.15</MoveSpeed>
+			</statOffsets>
+		</li>
+		<li>
+			<label>pack rat</label>
+			<description>[PAWN_nameDef] is a pack rat, [PAWN_pronoun] will keep just about anything that might be useful later.</description>
+			<degree>1</degree>
+			<statOffsets>
+				<CarryingCapacity>+30</CarryingCapacity>
+			</statOffsets>
+		</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Hauling</li>
+		</requiredWorkTypes>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>FT_Adventuring</defName>
+		<commonality>0.7</commonality>
+		<degreeDatas>
+		<li>
+			<label>traveler</label>
+			<description>[PAWN_nameDef] is great at traveling. [PAWN_pronoun] moves quickly while carrying more and will forage extra nutrition while traveling in caravans.</description>
+			<degree>1</degree>
+			<statOffsets>
+				<MoveSpeed>+0.1</MoveSpeed>
+				<CarryingCapacity>+10</CarryingCapacity>
+				<BedHungerRateFactor>-0.1</BedHungerRateFactor>
+				<ForagedNutritionPerDay>+0.5</ForagedNutritionPerDay>
+			</statOffsets>
+			<skillGains>
+				<Social>1</Social>
+			</skillGains>
+		</li>
+		<li>
+			<label>explorer</label>
+			<description>[PAWN_nameDef] is great at exploration. [PAWN_pronoun] moves quickly while carrying more and will forage extra nutrition while traveling in caravans.</description>
+			<degree>2</degree>
+			<statOffsets>
+				<MoveSpeed>+0.15</MoveSpeed>
+				<CarryingCapacity>+25</CarryingCapacity>
+				<BedHungerRateFactor>-0.15</BedHungerRateFactor>
+				<ForagedNutritionPerDay>+0.75</ForagedNutritionPerDay>
+			</statOffsets>
+			<skillGains>
+				<Social>2</Social>
+			</skillGains>
+		</li>
+		<li>
+			<label>adventurer</label>
+			<description>[PAWN_nameDef] is great at adventuring. [PAWN_pronoun] moves quickly while carrying more and will forage extra nutrition while traveling in caravans.</description>
+			<degree>3</degree>
+			<statOffsets>
+				<MoveSpeed>+0.2</MoveSpeed>
+				<CarryingCapacity>+50</CarryingCapacity>
+				<BedHungerRateFactor>-0.2</BedHungerRateFactor>
+				<ForagedNutritionPerDay>+1</ForagedNutritionPerDay>
+			</statOffsets>
+			<skillGains>
+				<Social>3</Social>
+			</skillGains>
+		</li>
+		</degreeDatas>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<conflictingTraits>
+			<li>FT_FrailBack</li>
+			<li>FT_Rooted</li>
+		</conflictingTraits>
+	</TraitDef>
+
 	<TraitDef>
 		<defName>FT_Charisma</defName>
 		<commonality>0.7</commonality>
@@ -421,6 +541,120 @@
 	
 	<!-- Uncommon (0.6, 5.0) -->
 	
+	<TraitDef>
+		<defName>FT_Bandolier</defName>
+		<commonality>0.6</commonality>
+		<degreeDatas>
+		<li>
+			<label>bandolier</label>
+			<description>[PAWN_nameDef] is a bandolier. [PAWN_pronoun] likes to keep extra ammo handy for reloading ranged weapons.</description>
+			<statOffsets>
+				<AimingDelayFactor>-0.1</AimingDelayFactor>
+				<CarryingCapacity>+25</CarryingCapacity>
+			</statOffsets>
+			<skillGains>
+				<Shooting>2</Shooting>
+			</skillGains>
+		</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Hunting</li>
+			<li>Hauling</li>
+		</requiredWorkTypes>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Shooting</li>
+		</requiredWorkTags>
+		<conflictingTraits>
+		<li>Brawler</li>
+		<li>FT_FrailBack</li>
+		<li>FT_IronFist</li>
+		</conflictingTraits>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>FT_SturdyFrame</defName>
+		<commonality>0.5</commonality>
+		<degreeDatas>
+		<li>
+			<label>sturdy frame</label>
+			<description>[PAWN_nameDef] has a sturdy frame. [PAWN_pronoun] can carry more and it takes more to bring [PAWN_objective] down.</description>
+			<statOffsets>
+				<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+				<PainShockThreshold>+0.1</PainShockThreshold>
+				<CarryingCapacity>+25</CarryingCapacity>
+			</statOffsets>
+		</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Hauling</li>
+		</requiredWorkTypes>
+		<requiredWorkTags>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<conflictingTraits>
+			<li>FT_FrailBack</li>
+		</conflictingTraits>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>FT_BearArms</defName>
+		<commonality>0.5</commonality>
+		<degreeDatas>
+		<li>
+			<label>bear arms</label>
+			<description>[PAWN_nameDef] has bear arms. [PAWN_pronoun] can carry more and [PAWN_possessive] arms pack more of a punch!</description>
+			<statOffsets>
+				<CarryingCapacity>+25</CarryingCapacity>
+				<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+				<MiningSpeed>0.1</MiningSpeed>
+				<DeepDrillingSpeed>+0.1</DeepDrillingSpeed>
+				<MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">+0.1</MeleeDoorDamageFactor>
+				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.1</SlaveSuppressionFallRate>
+				<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">+0.1</SuppressionPower>
+			</statOffsets>
+			<skillGains>
+				<Melee>3</Melee>
+				<Mining>3</Mining>
+			</skillGains>
+		</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Mining</li>
+			<li>Hauling</li>
+		</requiredWorkTypes>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>FT_FrailBack</defName>
+		<commonality>0.1</commonality>
+		<degreeDatas>
+		<li>
+			<label>frail back</label>
+			<description>[PAWN_nameDef] has a frail back and won't be able to carry as much as the average person.</description>
+			<statOffsets>
+				<CarryingCapacity>-25</CarryingCapacity>
+			</statOffsets>
+			<marketValueFactorOffset>-0.15</marketValueFactorOffset>
+		</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>FT_StrongBack</li>
+			<li>FT_SturdyFrame</li>
+			<li>FT_WreckingBall</li>
+			<li>FT_Bandolier</li>
+			<li>FT_Adventuring</li>
+			<li>FT_IronFist</li>
+			<li>FT_Tenderizer</li>
+		</conflictingTraits>
+	</TraitDef>
+
+
 	<TraitDef>
 		<defName>FT_Scientific</defName>
 		<commonality>0.6</commonality>
@@ -1111,7 +1345,7 @@
 			<li>FT_Agility</li>
 			<li>FT_Blitz</li>
 			<li>FT_Evasion</li>
-			<li MayRequire="monkey5206.carrycapacityfixed">FT_Adventuring</li>
+			<li>FT_Adventuring</li>
 		</conflictingTraits>
 	</TraitDef>
 	
@@ -1236,7 +1470,7 @@
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>Wimp</li>
-			<li MayRequire="monkey5206.carrycapacityfixed">FT_FrailBack</li>
+			<li>FT_FrailBack</li>
 		</conflictingTraits>
 	</TraitDef>
 
@@ -1698,7 +1932,7 @@
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>Wimp</li>
-			<li MayRequire="monkey5206.carrycapacityfixed">FT_FrailBack</li>
+			<li>FT_FrailBack</li>
 			<li>FT_Perfectionist</li>
 		</conflictingTraits>
 	</TraitDef>
@@ -1778,10 +2012,10 @@
 			<li>Brawler</li>
 			<li>ShootingAccuracy</li>
 			<li>Wimp</li>
-			<li MayRequire="monkey5206.carrycapacityfixed">FT_Bandolier</li>
+			<li>FT_Bandolier</li>
 			<li>FT_AimOffset</li>
 			<li>FT_GunNut</li>
-			<li MayRequire="monkey5206.carrycapacityfixed">FT_FrailBack</li>
+			<li>FT_FrailBack</li>
 		</conflictingTraits>
 	</TraitDef>
 	

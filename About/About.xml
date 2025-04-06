@@ -15,7 +15,10 @@
 	</loadAfter>
 	<description>Adds 71 new perks to Rimworld based on the theme from fallout games. Updated to 1.5. I fixed the traits XML, but the rest of the work on the traits and patching XML goes to FuglyPump.
 	
-Update:
+Latest Update:
+- Updated stats using MeleeDodgeChance to integers similiar to the Nimble trait. This should hopefully make those traits more impactful.
+
+Previous Updates:
 - No longer *Requires* Carrying Capacity Fixed (Continued), but some traits will not affect caravan weight, only carrying items on the map they are currently loaded in.
 
 	</description>

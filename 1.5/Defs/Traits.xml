@@ -353,7 +353,7 @@
 			<statOffsets>
 				<MoveSpeed>0.2</MoveSpeed>
 				<MeleeHitChance>+5</MeleeHitChance>
-				<MeleeDodgeChance>+0.1</MeleeDodgeChance>
+				<MeleeDodgeChance>+10</MeleeDodgeChance>
 				<HuntingStealth>+0.2</HuntingStealth>
 				<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
 			</statOffsets>
@@ -368,7 +368,7 @@
 			<statOffsets>
 				<MoveSpeed>0.4</MoveSpeed>
 				<MeleeHitChance>+10</MeleeHitChance>
-				<MeleeDodgeChance>+0.2</MeleeDodgeChance>
+				<MeleeDodgeChance>+20</MeleeDodgeChance>
 				<HuntingStealth>+0.4</HuntingStealth>
 				<PawnTrapSpringChance>-0.4</PawnTrapSpringChance>
 			</statOffsets>
@@ -518,7 +518,7 @@
 			<degree>1</degree>
 			<statOffsets>
 				<MoveSpeed>+0.1</MoveSpeed>
-				<MeleeDodgeChance>+0.1</MeleeDodgeChance>
+				<MeleeDodgeChance>+10</MeleeDodgeChance>
 				<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
 			</statOffsets>
 		</li>
@@ -528,7 +528,7 @@
 			<degree>2</degree>
 			<statOffsets>
 				<MoveSpeed>+0.2</MoveSpeed>
-				<MeleeDodgeChance>+0.2</MeleeDodgeChance>
+				<MeleeDodgeChance>+20</MeleeDodgeChance>
 				<PawnTrapSpringChance>-0.4</PawnTrapSpringChance>
 			</statOffsets>
 		</li>
@@ -1386,7 +1386,7 @@
 				<PawnTrapSpringChance>0.5</PawnTrapSpringChance>
 			</statFactors>
 			<statOffsets>
-				<MeleeDodgeChance>+0.1</MeleeDodgeChance>
+				<MeleeDodgeChance>+10</MeleeDodgeChance>
 				<ShootingAccuracyPawn>+10</ShootingAccuracyPawn>
 				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.1</SlaveSuppressionFallRate>
 			</statOffsets>
@@ -1828,7 +1828,7 @@
 			<description>[PAWN_nameDef] isn't very aware of [PAWN_possessive] surroundings, or anything at all really. [PAWN_pronoun]</description>
 			<statOffsets>
 				<GlobalLearningFactor>-0.2</GlobalLearningFactor>
-				<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+				<MeleeDodgeChance>-10</MeleeDodgeChance>
 				<TrainAnimalChance>-0.05</TrainAnimalChance>
 				<TameAnimalChance>-0.05</TameAnimalChance>
 				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">-0.1</ConversionPower>

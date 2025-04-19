@@ -1,128 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- Common (9.0, 8.0, 7.0) -->
-	<TraitDef>
-		<defName>FT_StrongBack</defName>
-		<commonality>0.9</commonality>
-		<degreeDatas>
-		<li>
-			<label>strong back</label>
-			<description>[PAWN_nameDef] has a strong back which allows [PAWN_objective] to carry more than most people.</description>
-			<degree>1</degree>
-			<statOffsets>
-				<CarryingCapacity>+50</CarryingCapacity>
-			</statOffsets>
-		</li>
-		<li>
-			<label>very strong back</label>
-			<description>[PAWN_nameDef] has a very strong back, [PAWN_pronoun] must be part mule or something because [PAWN_pronoun] can carry a lot more than most people.</description>
-			<degree>2</degree>
-			<statOffsets>
-				<CarryingCapacity>+75</CarryingCapacity>
-			</statOffsets>
-		</li>
-		</degreeDatas>
-		<requiredWorkTypes>
-			<li>Hauling</li>
-		</requiredWorkTypes>
-		<requiredWorkTags>
-			<li>Hauling</li>
-		</requiredWorkTags>
-		<conflictingTraits>
-			<li>Wimp</li>
-			<li>FT_FrailBack</li>
-		</conflictingTraits>
-	</TraitDef>
 	
-	<TraitDef>
-		<defName>FT_Packing</defName>
-		<commonality>0.7</commonality>
-		<degreeDatas>
-		<li>
-			<label>packin' light</label>
-			<description>[PAWN_nameDef] packs lightly. [PAWN_pronoun] will carry less but will move more swiftly.</description>
-			<degree>-1</degree>
-			<statOffsets>
-				<CarryingCapacity >-15</CarryingCapacity>
-				<MoveSpeed>+0.15</MoveSpeed>
-			</statOffsets>
-		</li>
-		<li>
-			<label>pack rat</label>
-			<description>[PAWN_nameDef] is a pack rat, [PAWN_pronoun] will keep just about anything that might be useful later.</description>
-			<degree>1</degree>
-			<statOffsets>
-				<CarryingCapacity>+30</CarryingCapacity>
-			</statOffsets>
-		</li>
-		</degreeDatas>
-		<requiredWorkTypes>
-			<li>Hauling</li>
-		</requiredWorkTypes>
-		<requiredWorkTags>
-			<li>ManualDumb</li>
-			<li>Hauling</li>
-		</requiredWorkTags>
-	</TraitDef>
-	
-	<TraitDef>
-		<defName>FT_Adventuring</defName>
-		<commonality>0.7</commonality>
-		<degreeDatas>
-		<li>
-			<label>traveler</label>
-			<description>[PAWN_nameDef] is great at traveling. [PAWN_pronoun] moves quickly while carrying more and will forage extra nutrition while traveling in caravans.</description>
-			<degree>1</degree>
-			<statOffsets>
-				<MoveSpeed>+0.1</MoveSpeed>
-				<CarryingCapacity>+10</CarryingCapacity>
-				<BedHungerRateFactor>-0.1</BedHungerRateFactor>
-				<ForagedNutritionPerDay>+0.5</ForagedNutritionPerDay>
-			</statOffsets>
-			<skillGains>
-				<Social>1</Social>
-			</skillGains>
-		</li>
-		<li>
-			<label>explorer</label>
-			<description>[PAWN_nameDef] is great at exploration. [PAWN_pronoun] moves quickly while carrying more and will forage extra nutrition while traveling in caravans.</description>
-			<degree>2</degree>
-			<statOffsets>
-				<MoveSpeed>+0.15</MoveSpeed>
-				<CarryingCapacity>+25</CarryingCapacity>
-				<BedHungerRateFactor>-0.15</BedHungerRateFactor>
-				<ForagedNutritionPerDay>+0.75</ForagedNutritionPerDay>
-			</statOffsets>
-			<skillGains>
-				<Social>2</Social>
-			</skillGains>
-		</li>
-		<li>
-			<label>adventurer</label>
-			<description>[PAWN_nameDef] is great at adventuring. [PAWN_pronoun] moves quickly while carrying more and will forage extra nutrition while traveling in caravans.</description>
-			<degree>3</degree>
-			<statOffsets>
-				<MoveSpeed>+0.2</MoveSpeed>
-				<CarryingCapacity>+50</CarryingCapacity>
-				<BedHungerRateFactor>-0.2</BedHungerRateFactor>
-				<ForagedNutritionPerDay>+1</ForagedNutritionPerDay>
-			</statOffsets>
-			<skillGains>
-				<Social>3</Social>
-			</skillGains>
-		</li>
-		</degreeDatas>
-		<requiredWorkTags>
-			<li>PlantWork</li>
-			<li>Hauling</li>
-		</requiredWorkTags>
-		<conflictingTraits>
-			<li>FT_FrailBack</li>
-			<li>FT_Rooted</li>
-		</conflictingTraits>
-	</TraitDef>
-
 	<TraitDef>
 		<defName>FT_Charisma</defName>
 		<commonality>0.7</commonality>
@@ -141,7 +21,7 @@
 				<DrugSellPriceImprovement>+0.05</DrugSellPriceImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>2</Social>
+				<li><key>Social</key><value>2</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -158,7 +38,7 @@
 				<DrugSellPriceImprovement>+0.1</DrugSellPriceImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>4</Social>
+				<li><key>Social</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -193,7 +73,7 @@
 				<AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">+0.05</AnimalProductsSellImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>4</Social>
+				<li><key>Social</key><value>1</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -211,7 +91,7 @@
 				<AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">+0.1</AnimalProductsSellImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>2</Social>
+				<li><key>Social</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -241,7 +121,7 @@
 				<MeleeHitChance>-10</MeleeHitChance>
 			</statOffsets>
 			<skillGains>
-				<Shooting>-2</Shooting>
+				<li><key>Shooting</key><value>-2</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -252,7 +132,7 @@
 				<ShootingAccuracyPawn>+10</ShootingAccuracyPawn>
 			</statOffsets>
 			<skillGains>
-				<Shooting>2</Shooting>
+				<li><key>Shooting</key><value>2</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -263,7 +143,7 @@
 				<ShootingAccuracyPawn>+15</ShootingAccuracyPawn>
 			</statOffsets>
 			<skillGains>
-				<Shooting>4</Shooting>
+				<li><key>Shooting</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -272,7 +152,7 @@
 		</requiredWorkTypes>
 		<requiredWorkTags>
 			<li>Violent</li>
-			<li>Shooting</li>
+			<li>Hunting</li>
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>Brawler</li>
@@ -299,9 +179,9 @@
 				<FixBrokenDownBuildingSuccessChance>+0.1</FixBrokenDownBuildingSuccessChance>
 			</statOffsets>
 			<skillGains>
-				<Crafting>3</Crafting>
-				<Construction>3</Construction>
-				<Artistic>5</Artistic>
+				<li><key>Crafting</key><value>3</value></li>
+				<li><key>Construction</key><value>3</value></li>
+				<li><key>Artistic</key><value>5</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -311,8 +191,8 @@
 			<li>Art</li>
 		</requiredWorkTypes>
 		<requiredWorkTags>
+			<li>Artistic</li>
 			<li>Crafting</li>
-			<li>Constructing</li>
 			<li>ManualSkilled</li>
 		</requiredWorkTags>
 		<conflictingTraits>
@@ -329,7 +209,7 @@
 			<label>iron stomach</label>
 			<description>[PAWN_nameDef] has an iron stomach. [PAWN_pronoun] can go without eating longer and it takes more to upset [PAWN_possessive] stomach.</description>
 			<statOffsets>
-				<BedHungerRateFactor>-0.3</BedHungerRateFactor>
+				<HungerRateMultiplier>-0.3</HungerRateMultiplier>
 				<PainShockThreshold>+0.1</PainShockThreshold>
 				<ImmunityGainSpeed>+0.1</ImmunityGainSpeed>
 				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.1</SlaveSuppressionFallRate>
@@ -358,7 +238,7 @@
 				<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
 			</statOffsets>
 			<skillGains>
-				<Melee>2</Melee>
+				<li><key>Melee</key><value>2</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -373,7 +253,7 @@
 				<PawnTrapSpringChance>-0.4</PawnTrapSpringChance>
 			</statOffsets>
 			<skillGains>
-				<Melee>4</Melee>
+				<li><key>Melee</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -411,8 +291,8 @@
 				<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">+0.05</HackingSpeed>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>3</Intellectual>
-				<Medicine>1</Medicine>
+				<li><key>Intellectual</key><value>+3</value></li>
+				<li><key>Medicine</key><value>+1</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -431,8 +311,8 @@
 				<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">+0.1</HackingSpeed>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>3</Intellectual>
-				<Medicine>2</Medicine>
+				<li><key>Intellectual</key><value>+4</value></li>
+				<li><key>Medicine</key><value>+2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -467,9 +347,9 @@
 				<FoodPoisonChance>-0.05</FoodPoisonChance>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>1</Intellectual>
-				<Medicine>1</Medicine>
-				<Social>1</Social>
+				<li><key>Intellectual</key><value>+1</value></li>
+				<li><key>Medicine</key><value>+1</value></li>
+				<li><key>Social</key><value>+1</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -486,9 +366,9 @@
 				<FoodPoisonChance>-0.1</FoodPoisonChance>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>2</Intellectual>
-				<Medicine>2</Medicine>
-				<Social>2</Social>
+				<li><key>Intellectual</key><value>+2</value></li>
+				<li><key>Medicine</key><value>+2</value></li>
+				<li><key>Social</key><value>+2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -542,120 +422,6 @@
 	<!-- Uncommon (0.6, 5.0) -->
 	
 	<TraitDef>
-		<defName>FT_Bandolier</defName>
-		<commonality>0.6</commonality>
-		<degreeDatas>
-		<li>
-			<label>bandolier</label>
-			<description>[PAWN_nameDef] is a bandolier. [PAWN_pronoun] likes to keep extra ammo handy for reloading ranged weapons.</description>
-			<statOffsets>
-				<AimingDelayFactor>-0.1</AimingDelayFactor>
-				<CarryingCapacity>+25</CarryingCapacity>
-			</statOffsets>
-			<skillGains>
-				<Shooting>2</Shooting>
-			</skillGains>
-		</li>
-		</degreeDatas>
-		<requiredWorkTypes>
-			<li>Hunting</li>
-			<li>Hauling</li>
-		</requiredWorkTypes>
-		<requiredWorkTags>
-			<li>Violent</li>
-			<li>Shooting</li>
-		</requiredWorkTags>
-		<conflictingTraits>
-		<li>Brawler</li>
-		<li>FT_FrailBack</li>
-		<li>FT_IronFist</li>
-		</conflictingTraits>
-	</TraitDef>
-	
-	<TraitDef>
-		<defName>FT_SturdyFrame</defName>
-		<commonality>0.5</commonality>
-		<degreeDatas>
-		<li>
-			<label>sturdy frame</label>
-			<description>[PAWN_nameDef] has a sturdy frame. [PAWN_pronoun] can carry more and it takes more to bring [PAWN_objective] down.</description>
-			<statOffsets>
-				<IncomingDamageFactor>-0.1</IncomingDamageFactor>
-				<PainShockThreshold>+0.1</PainShockThreshold>
-				<CarryingCapacity>+25</CarryingCapacity>
-			</statOffsets>
-		</li>
-		</degreeDatas>
-		<requiredWorkTypes>
-			<li>Hauling</li>
-		</requiredWorkTypes>
-		<requiredWorkTags>
-			<li>Hauling</li>
-		</requiredWorkTags>
-		<conflictingTraits>
-			<li>FT_FrailBack</li>
-		</conflictingTraits>
-	</TraitDef>
-
-	<TraitDef>
-		<defName>FT_BearArms</defName>
-		<commonality>0.5</commonality>
-		<degreeDatas>
-		<li>
-			<label>bear arms</label>
-			<description>[PAWN_nameDef] has bear arms. [PAWN_pronoun] can carry more and [PAWN_possessive] arms pack more of a punch!</description>
-			<statOffsets>
-				<CarryingCapacity>+25</CarryingCapacity>
-				<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
-				<MiningSpeed>0.1</MiningSpeed>
-				<DeepDrillingSpeed>+0.1</DeepDrillingSpeed>
-				<MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">+0.1</MeleeDoorDamageFactor>
-				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.1</SlaveSuppressionFallRate>
-				<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">+0.1</SuppressionPower>
-			</statOffsets>
-			<skillGains>
-				<Melee>3</Melee>
-				<Mining>3</Mining>
-			</skillGains>
-		</li>
-		</degreeDatas>
-		<requiredWorkTypes>
-			<li>Mining</li>
-			<li>Hauling</li>
-		</requiredWorkTypes>
-		<requiredWorkTags>
-			<li>Violent</li>
-			<li>Hauling</li>
-			<li>Mining</li>
-		</requiredWorkTags>
-	</TraitDef>
-
-	<TraitDef>
-		<defName>FT_FrailBack</defName>
-		<commonality>0.1</commonality>
-		<degreeDatas>
-		<li>
-			<label>frail back</label>
-			<description>[PAWN_nameDef] has a frail back and won't be able to carry as much as the average person.</description>
-			<statOffsets>
-				<CarryingCapacity>-25</CarryingCapacity>
-			</statOffsets>
-			<marketValueFactorOffset>-0.15</marketValueFactorOffset>
-		</li>
-		</degreeDatas>
-		<conflictingTraits>
-			<li>FT_StrongBack</li>
-			<li>FT_SturdyFrame</li>
-			<li>FT_WreckingBall</li>
-			<li>FT_Bandolier</li>
-			<li>FT_Adventuring</li>
-			<li>FT_IronFist</li>
-			<li>FT_Tenderizer</li>
-		</conflictingTraits>
-	</TraitDef>
-
-
-	<TraitDef>
 		<defName>FT_Scientific</defName>
 		<commonality>0.6</commonality>
 		<forcedPassions>
@@ -672,8 +438,8 @@
 				<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">+0.1</HackingSpeed>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>2</Intellectual>
-				<Medicine>1</Medicine>
+				<li><key>Intellectual</key><value>2</value></li>
+				<li><key>Medicine</key><value>1</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -686,8 +452,8 @@
 				<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">+0.2</HackingSpeed>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>2</Intellectual>
-				<Medicine>2</Medicine>
+				<li><key>Intellectual</key><value>3</value></li>
+				<li><key>Medicine</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -771,7 +537,7 @@
 				<DrugSellPriceImprovement>+0.1</DrugSellPriceImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>3</Social>
+				<li><key>Social</key><value>3</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -787,7 +553,7 @@
 				<DrugSellPriceImprovement>+0.15</DrugSellPriceImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>4</Social>
+				<li><key>Social</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -820,7 +586,7 @@
 				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionFallRate>
 			</statOffsets>
 			<skillGains>
-				<Social>-1</Social>
+				<li><key>Social</key><value>-1</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -836,8 +602,8 @@
 				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.1</SlaveSuppressionFallRate>
 			</statOffsets>
 			<skillGains>
-				<Social>2</Social>
-				<Intellectual>1</Intellectual>
+				<li><key>Social</key><value>2</value></li>
+				<li><key>Intellectual</key><value>1</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -853,8 +619,8 @@
 				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.2</SlaveSuppressionFallRate>
 			</statOffsets>
 			<skillGains>
-				<Social>3</Social>
-				<Intellectual>2</Intellectual>
+				<li><key>Social</key><value>3</value></li>
+				<li><key>Intellectual</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -890,7 +656,7 @@
 				<AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">-0.05</AnimalProductsSellImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>2</Social>
+				<li><key>Social</key><value>2</value></li>
 			</skillGains>
 		</li>
 		<li>
@@ -906,7 +672,7 @@
 				<AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">-0.1</AnimalProductsSellImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>3</Social>
+				<li><key>Social</key><value>3</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -942,8 +708,8 @@
 				<ButcheryMechanoidEfficiency>+0.1</ButcheryMechanoidEfficiency>
 			</statOffsets>
 			<skillGains>
-				<Construction>2</Construction>
-				<Crafting>2</Crafting>
+				<li><key>Construction</key><value>2</value></li>
+				<li><key>Crafting</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -953,7 +719,7 @@
 		</requiredWorkTypes>
 		<requiredWorkTags>
 			<li>Crafting</li>
-			<li>Constructing</li>
+			<li>ManualSkilled</li>
 		</requiredWorkTags>
 	</TraitDef>
 	
@@ -976,7 +742,7 @@
 				<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 			</statOffsets>
 			<skillGains>
-				<Social>5</Social>
+				<li><key>Social</key><value>5</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1005,9 +771,10 @@
 			<label>rad resistant</label>
 			<description>[PAWN_nameDef]'s body has built up a resistance to the negative effects of toxic fallout.</description>
 			<degree>1</degree>
+			<statFactors>
+				<ToxicSensitivity>0.7</ToxicSensitivity>
+			</statFactors>
 			<statOffsets>
-				<ToxicResistance>+0.3</ToxicResistance>
-				<ToxicEnvironmentResistance>+0.3</ToxicEnvironmentResistance>
 				<ImmunityGainSpeed>+0.1</ImmunityGainSpeed>
 			</statOffsets>
 		</li>
@@ -1015,9 +782,10 @@
 			<label>rad tolerant</label>
 			<description>[PAWN_nameDef]'s body has built up a tolerance to the negative effects of toxic fallout.</description>
 			<degree>2</degree>
+			<statFactors>
+				<ToxicSensitivity>0.4</ToxicSensitivity>
+			</statFactors>
 			<statOffsets>
-				<ToxicResistance>+0.6</ToxicResistance>
-				<ToxicEnvironmentResistance>+0.6</ToxicEnvironmentResistance>
 				<ImmunityGainSpeed>+0.1</ImmunityGainSpeed>
 			</statOffsets>
 		</li>
@@ -1102,7 +870,7 @@
 				<MeleeHitChance>+5</MeleeHitChance>
 			</statOffsets>
 			<skillGains>
-				<Melee>2</Melee>
+				<li><key>Melee</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1127,13 +895,13 @@
 				<ShootingAccuracyPawn>+5</ShootingAccuracyPawn>
 			</statOffsets>
 			<skillGains>
-				<Shooting>3</Shooting>
+				<li><key>Shooting</key><value>3</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
 		<requiredWorkTags>
 			<li>Violent</li>
-			<li>Shooting</li>
+			<li>Hunting</li>
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>Brawler</li>
@@ -1189,7 +957,7 @@
 				<ForagedNutritionPerDay>+0.5</ForagedNutritionPerDay>
 			</statOffsets>
 			<skillGains>
-				<Plants>2</Plants>
+				<li><key>Plants</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1215,7 +983,7 @@
 				<MeleeHitChance>+10</MeleeHitChance>
 			</statOffsets>
 			<skillGains>
-				<Melee>2</Melee>
+				<li><key>Melee</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1256,7 +1024,7 @@
 				<AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">+0.05</AnimalProductsSellImprovement>
 			</statOffsets>
 			<skillGains>
-				<Social>3</Social>
+				<li><key>Social</key><value>3</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1293,8 +1061,8 @@
 				<FoodPoisonChance>-0.1</FoodPoisonChance>
 			</statOffsets>
 			<skillGains>
-				<Medicine>5</Medicine>
-				<Cooking>2</Cooking>
+				<li><key>Medicine</key><value>5</value></li>
+				<li><key>Cooking</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1329,7 +1097,7 @@
 				<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">+0.2</SlaveSuppressionFallRate>
 			</statOffsets>
 			<skillGains>
-				<Melee>2</Melee>
+				<li><key>Melee</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1345,7 +1113,7 @@
 			<li>FT_Agility</li>
 			<li>FT_Blitz</li>
 			<li>FT_Evasion</li>
-			<li>FT_Adventuring</li>
+			<li MayRequire="monkey5206.carrycapacityfixed">FT_Adventuring</li>
 		</conflictingTraits>
 	</TraitDef>
 	
@@ -1357,9 +1125,8 @@
 		<label>lead belly</label>
 		<description>[PAWN_nameDef] has a lead belly. [PAWN_possessive] belly can go much longer without food and [PAWN_pronoun] is more resistant to toxic radiation.</description>
 		<statOffsets>
-			<BedHungerRateFactor>-0.3</BedHungerRateFactor>
-			<ToxicResistance>+0.2</ToxicResistance>
-			<ToxicEnvironmentResistance>+0.2</ToxicEnvironmentResistance>
+			<HungerRateMultiplier>-0.3</HungerRateMultiplier>
+			<ToxicSensitivity>-0.2</ToxicSensitivity>
 			<ImmunityGainSpeed>+0.1</ImmunityGainSpeed>
 		</statOffsets>
 		</li>
@@ -1394,7 +1161,6 @@
 		</degreeDatas>
 		<requiredWorkTags>
 			<li>Violent</li>
-			<li>Shooting</li>
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>NaturalMood</li>
@@ -1420,7 +1186,7 @@
 				<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">+0.1</PruningSpeed>
 			</statOffsets>
 			<skillGains>
-				<Plants>4</Plants>
+				<li><key>Plants</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1449,7 +1215,6 @@
 			<description>[PAWN_nameDef] is a tenderizer! [PAWN_pronoun] has a passion for beating meat into submission.</description>
 			<statOffsets>
 				<MeleeDPS>+2</MeleeDPS>
-				<MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">+0.2</MeleeDoorDamageFactor>
 				<PawnBeauty>+1</PawnBeauty>
 				<ArrestSuccessChance>+0.2</ArrestSuccessChance>
 				<AnimalGatherSpeed>+0.2</AnimalGatherSpeed>
@@ -1458,7 +1223,7 @@
 				<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">+0.1</SuppressionPower>
 			</statOffsets>
 			<skillGains>
-				<Melee>4</Melee>
+				<li><key>Melee</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1470,7 +1235,7 @@
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>Wimp</li>
-			<li>FT_FrailBack</li>
+			<li MayRequire="monkey5206.carrycapacityfixed">FT_FrailBack</li>
 		</conflictingTraits>
 	</TraitDef>
 
@@ -1527,7 +1292,7 @@
 				<ButcheryMechanoidEfficiency>+0.1</ButcheryMechanoidEfficiency>
 			</statOffsets>
 			<skillGains>
-				<Cooking>4</Cooking>
+				<li><key>Cooking</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1570,7 +1335,7 @@
 				<AnimalProductsSellImprovement MayRequire="Ludeon.RimWorld.Ideology">+0.05</AnimalProductsSellImprovement>
 			</statOffsets>
 			<skillGains>
-				<Animals>4</Animals>
+				<li><key>Animals</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1607,8 +1372,8 @@
 				<ArrestSuccessChance>+0.1</ArrestSuccessChance>
 			</statOffsets>
 			<skillGains>
-				<Social>2</Social>
-				<Crafting>2</Crafting>
+				<li><key>Social</key><value>2</value></li>
+				<li><key>Crafting</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1644,8 +1409,8 @@
 				<MedicalSurgerySuccessChance>+0.05</MedicalSurgerySuccessChance>
 			</statOffsets>
 			<skillGains>
-				<Medicine>5</Medicine>
-				<Plants>2</Plants>
+				<li><key>Medicine</key><value>5</value></li>
+				<li><key>Plants</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1683,9 +1448,9 @@
 				<SocialImpact>+0.1</SocialImpact>
 			</statOffsets>
 			<skillGains>
-				<Medicine>3</Medicine>
-				<Plants>3</Plants>
-				<Social>2</Social>
+				<li><key>Medicine</key><value>3</value></li>
+				<li><key>Plants</key><value>3</value></li>
+				<li><key>Social</key><value>2</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1715,21 +1480,21 @@
 		<li>
 			<label>ghoulish</label>
 			<description>[PAWN_nameDef] is still human, mostly. [PAWN_pronoun] is immune to the effects of toxic fallout and much harder to kill but [PAWN_possessive] ghoulish appearance makes interacting with others difficult.</description>
+			<statFactors>
+				<ToxicSensitivity>0</ToxicSensitivity>
+			</statFactors>
 			<statOffsets>
-				<ToxicResistance>+1</ToxicResistance>
-				<ToxicEnvironmentResistance>+1</ToxicEnvironmentResistance>
-				<LifespanFactor>+0.5</LifespanFactor>
 				<IncomingDamageFactor>-0.25</IncomingDamageFactor>
-				<ImmunityGainSpeed>+0.1</ImmunityGainSpeed>
-				<InjuryHealingFactor>+0.1</InjuryHealingFactor>
+				<ImmunityGainSpeed>+0.25</ImmunityGainSpeed>
+				<InjuryHealingFactor>+0.25</InjuryHealingFactor>
 				<PawnBeauty>-3</PawnBeauty>
 				<SocialImpact>-0.2</SocialImpact>
 				<TameAnimalChance>-0.25</TameAnimalChance>
 				<TrainAnimalChance>-0.25</TrainAnimalChance>
 			</statOffsets>
 			<skillGains>
-				<Social>-3</Social>
-				<Animals>-3</Animals>
+				<li><key>Social</key><value>-3</value></li>
+				<li><key>Animals</key><value>-3</value></li>
 			</skillGains>
 			<marketValueFactorOffset>-0.1</marketValueFactorOffset>
 		</li>
@@ -1798,8 +1563,8 @@
 				<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">+0.1</CertaintyLossFactor>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>-2</Intellectual>
-				<Medicine>-2</Medicine>
+				<li><key>Intellectual</key><value>-2</value></li>
+				<li><key>Medicine</key><value>-2</value></li>
 			</skillGains>
 			<marketValueFactorOffset>-0.1</marketValueFactorOffset>
 		</li>
@@ -1835,10 +1600,10 @@
 				<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">+0.1</CertaintyLossFactor>
 			</statOffsets>
 			<skillGains>
-				<Intellectual>-1</Intellectual>
-				<Medicine>-1</Medicine>
-				<Social>-1</Social>
-				<Animals>-1</Animals>
+				<li><key>Intellectual</key><value>-1</value></li>
+				<li><key>Medicine</key><value>-1</value></li>
+				<li><key>Social</key><value>-1</value></li>
+				<li><key>Animals</key><value>-1</value></li>
 			</skillGains>
 			<marketValueFactorOffset>-0.1</marketValueFactorOffset>
 		</li>
@@ -1877,9 +1642,9 @@
 				<SocialImpact>-0.1</SocialImpact>
 			</statOffsets>
 			<skillGains>
-				<Plants>3</Plants>
-				<Construction>3</Construction>
-				<Artistic>3</Artistic>
+				<li><key>Plants</key><value>3</value></li>
+				<li><key>Construction</key><value>3</value></li>
+				<li><key>Artistic</key><value>3</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1889,7 +1654,7 @@
 		</requiredWorkTypes>
 		<requiredWorkTags>
 			<li>PlantWork</li>
-			<li>Constructing</li>
+			<li>ManualSkilled</li>
 		</requiredWorkTags>
 	</TraitDef>
 
@@ -1905,18 +1670,17 @@
 			<description>[PAWN_nameDef] is a wrecking ball! [PAWN_pronoun] can push through building material like it's not even there. [PAWN_pronoun] really doesn't know [PAWN_possessive] own strength, often breaking things during construction.</description>
 			<statOffsets>
 				<ConstructionSpeed>+0.5</ConstructionSpeed>
-				<MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">+0.2</MeleeDoorDamageFactor>
 				<MiningSpeed>+0.2</MiningSpeed>
 				<DeepDrillingSpeed>+0.2</DeepDrillingSpeed>
-				<ArrestSuccessChance>+0.1</ArrestSuccessChance>
+				<ArrestSuccessChance>+0.2</ArrestSuccessChance>
 				<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">+0.1</SuppressionPower>
 				<ConstructSuccessChance>-0.1</ConstructSuccessChance>
 				<FixBrokenDownBuildingSuccessChance>-0.1</FixBrokenDownBuildingSuccessChance>
 			</statOffsets>
 			<skillGains>
-				<Melee>3</Melee>
-				<Mining>3</Mining>
-				<Construction>1</Construction>
+				<li><key>Melee</key><value>3</value></li>
+				<li><key>Mining</key><value>3</value></li>
+				<li><key>Construction</key><value>1</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1928,11 +1692,11 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 			<li>Mining</li>
-			<li>Constructing</li>
+			<li>ManualSkilled</li>
 		</requiredWorkTags>
 		<conflictingTraits>
 			<li>Wimp</li>
-			<li>FT_FrailBack</li>
+			<li MayRequire="monkey5206.carrycapacityfixed">FT_FrailBack</li>
 			<li>FT_Perfectionist</li>
 		</conflictingTraits>
 	</TraitDef>
@@ -1955,8 +1719,8 @@
 				<SmoothingSpeed>-0.1</SmoothingSpeed>
 			</statOffsets>
 			<skillGains>
-				<Construction>4</Construction>
-				<Artistic>4</Artistic>
+				<li><key>Construction</key><value>4</value></li>
+				<li><key>Artistic</key><value>4</value></li>
 			</skillGains>
 		</li>
 		</degreeDatas>
@@ -1965,7 +1729,8 @@
 			<li>Art</li>
 		</requiredWorkTypes>
 		<requiredWorkTags>
-			<li>Constructing</li>
+			<li>ManualSkilled</li>
+			<li>Cleaning</li>
 			<li>Artistic</li>
 		</requiredWorkTags>
 		<conflictingTraits>
@@ -1989,13 +1754,12 @@
 			<statOffsets>
 				<MeleeDPS>+3</MeleeDPS>
 				<MeleeHitChance>+10</MeleeHitChance>
-				<MeleeDoorDamageFactor MayRequire="Ludeon.RimWorld.Biotech">+0.2</MeleeDoorDamageFactor>
 				<ArrestSuccessChance>+0.2</ArrestSuccessChance>
 				<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">+0.1</SuppressionPower>
 			</statOffsets>
 			<skillGains>
-				<Melee>4</Melee>
-				<Shooting>-4</Shooting>
+				<li><key>Melee</key><value>4</value></li>
+				<li><key>Shooting</key><value>-4</value></li>
 			</skillGains>
 			<disallowedInspirations>
 				<li>Frenzy_Shoot</li>
@@ -2012,10 +1776,10 @@
 			<li>Brawler</li>
 			<li>ShootingAccuracy</li>
 			<li>Wimp</li>
-			<li>FT_Bandolier</li>
+			<li MayRequire="monkey5206.carrycapacityfixed">FT_Bandolier</li>
 			<li>FT_AimOffset</li>
 			<li>FT_GunNut</li>
-			<li>FT_FrailBack</li>
+			<li MayRequire="monkey5206.carrycapacityfixed">FT_FrailBack</li>
 		</conflictingTraits>
 	</TraitDef>
 	

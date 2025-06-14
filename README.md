@@ -1,1 +1,0 @@
-Adds 71 new perks to Rimworld based on the theme from fallout games. Updated to 1.5. I updated the traits XML and updated the required mods in the about XML, but the rest of the work on the traits and patching XML goes to FuglyPump.
